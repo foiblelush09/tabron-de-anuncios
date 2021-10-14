@@ -1,0 +1,81 @@
+/* リセットCSS */
+body {
+  font-size: 14px;
+  color: #333;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+ul,li {
+  padding: 0;
+  margin: 0;
+}
+
+/* ヘッダー */
+header{
+  height: 50px;
+  background-color: lightslategrey;
+  padding: 10px 0;
+  display: flex;
+}
+
+.heading {
+  width: 50%;
+  margin-left: 30px;
+  color: #f0f0f0;
+}
+
+.navbar {
+  width: 50%;
+  padding: 20px;
+}
+
+.nav-lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.lists {
+  font-size: 15px;
+  color: aqua;
+  display: flex;
+  justify-content: space-around;
+}
+
+.top-image {
+  height: 100%;
+  width: 100%;
+}
+
+.contents {
+  height: 500px;
+  background-image: url(/images/igor-karimov-9AmKnNZw3GA-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.upper-content {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+footer{
+  height: 50px;
+  background-color: lightslategrey;
+  padding: 10px 0;
+  display: flex;
+}
