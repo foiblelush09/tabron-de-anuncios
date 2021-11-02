@@ -39,17 +39,15 @@ header{
   padding: 20px;
 }
 
-.nav-lists {
-  display: flex;
-  justify-content: space-around;
-}
-
 li {
   list-style: none;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 40px;
+  font-family: 'Lobster', cursive;
+  color: #f0f0f0;
+  text-decoration: none;
 }
 
 .lists {
@@ -61,6 +59,7 @@ li {
 
 .top-image {
   height: 100%;
+
   width: 100%;
 }
 
@@ -69,13 +68,30 @@ li {
   background-image: url(/images/igor-karimov-9AmKnNZw3GA-unsplash.jpg);
   background-size: cover;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  overflow: scroll;
+  align-items: center;
+}
+
+.content-post {
+  margin-left: auto;
+  border: 1px solid blue;
   
 }
 
-.upper-content {
-  color: #ffffff;
-  font-size: 25px;
+.box {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  height: 500px;
+
+}
+
+.box-text {
+  color: antiquewhite;
+  font-size: 50px;
+  font-family: 'Kiwi Maru', serif;
 }
 
 footer{
@@ -84,3 +100,61 @@ footer{
   padding: 10px 0;
   display: flex;
 }
+
+.meigen{
+  color: #f0f0f0;
+  font-family: 'Lobster', cursive;
+  margin-left: auto;
+}
+
+/* 新規募集のCSS */
+.title-form, .text-form {
+  width: 500px;
+  padding: 15px;
+  margin: 10px auto;
+  border: 1px solid black;
+  display: block;
+  background-color: #ccffff;
+  border-radius: 5px;
+}
+
+.toukou {
+  color: #f0f0f0;
+  margin: 10px ;
+  font-family: 'Kiwi Maru', serif;
+}
+
+.btn-form {
+  width: 200px;
+  padding: 15px;
+  margin: 10px auto;
+  border: 1px solid white;
+  color: white;
+  background-color: #0066cc;
+  display: block;
+  border-radius: 90px;
+}
+
+.board-destroy {
+  text-decoration: none;
+  color: #333;
+}
+
+.game-title {
+  font-size: 15px;
+  color:#191970;
+  border-radius: 20px;
+}
+.text {
+  font-size: 15px;
+  color: blue;
+  border-radius: 20px;
+}
+
+.username {
+  font-size: 15px;
+  color: lightsalmon;
+  border-radius: 20px;
+}
+
+

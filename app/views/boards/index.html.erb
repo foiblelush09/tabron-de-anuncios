@@ -1,12 +1,21 @@
 <%= render 'shared/header'%>
 
-<div class="contents row">
-  <% @boards.each do |borad| %>
-    <div class="content_post" style="background-image: url(<%= tweet.image %>);">
-      <p><%= board.text %></p>
-      <span class="name">
-        <%= borad.name %>
-      </span>
+<div class="contents">
+  <% if user_signed_in?%>
+    <% @boards.each do |board| %>
+      <div class="content_post">
+        <!--<h5 class='game'>Game Title</h5>-->
+        <p class='game-title'><%= board.game_title%></p>
+        <p class='text'><%= board.text%></p>
+        <p class='username'><%= board.user.nickname %></p>
+      </div>
+      <% if current_user.id == board.user.id%>
+        <%= link_to "削除", board_path(board.id), method: :delete, class:"board-destroy" %>
+      <% end %>
+    <% end %>
+  <% else %>
+    <div class='box'>
+      <h1 class='box-text'>一緒にゲームをする仲間を見つけよう！！</h1>
     </div>
   <% end %>
 </div>
