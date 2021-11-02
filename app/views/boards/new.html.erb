@@ -1,0 +1,14 @@
+<%= render 'shared/header'%>
+
+<div class="contents ">
+  <div class="container">
+    <h3 class='toukou'>仲間を募集する</h3>
+    <%= form_with(model: @board, local: true) do |form| %>
+      <%= form.text_field :game_title, placeholder: "ゲームの名前", class: 'title-form' %>
+      <%= form.text_area :text, placeholder: "コメント", rows: "10", class: 'text-form' %>
+      <%= form.submit "募集する", class: 'btn-form' %>
+    <% end %>
+  </div>
+</div>
+
+<%= render 'shared/footer'%>
